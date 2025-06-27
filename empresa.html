@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empresa - Hidraultec</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo_hidraultec.png" alt="Hidraultec Logo">
+        </a>
+        <div class="header-right">
+            <nav class="nav">
+                <a href="index.html">HOME</a>
+                <a href="produtos.html">PRODUTOS</a>
+                <a href="empresa.html" class="active">EMPRESA</a> 
+                <a href="servicos.html">SERVIÇOS</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+            <a class="whatsapp-header" href="https://wa.me/554734667777" target="_blank" title="Fale conosco pelo WhatsApp">
+                <i class="fab fa-whatsapp"></i> (47) 3466-7777
+            </a>
+        </div>
+    </header>
+
+  <section class="banner-empresa">
+    <img src="img/logopaginaempresa.png" alt="Banner Empresa">
+    <div class="texto-banner">
+      <h1>Comprometidos com Excelência e Inovação</h1>
+    </div>
+  </section>
+
+  <section class="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>A Hidraultec atua há mais de 25 anos oferecendo soluções personalizadas em sistemas hidráulicos e pneumáticos para a indústria. Com equipe técnica especializada, infraestrutura moderna e compromisso com a excelência, somos referência no mercado nacional.</p>
+  </section>
+
+  <section class="missao-visao-valores">
+    <div class="item">
+      <h3>Missão</h3>
+      <p>Oferecer soluções hidráulicas com qualidade, eficiência e inovação, contribuindo com o crescimento dos nossos clientes.</p>
+    </div>
+    <div class="item">
+      <h3>Visão</h3>
+      <p>Ser reconhecida como a principal referência em soluções hidráulicas e pneumáticas no Brasil.</p>
+    </div>
+    <div class="item">
+      <h3>Valores</h3>
+      <p>Ética, comprometimento, inovação, foco no cliente e busca contínua por excelência.</p>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <h2>Pronto para evoluir com a gente?</h2>
+    <p>Conheça nossos produtos e veja como podemos transformar sua operação.</p>
+    <a href="produtos.html" class="botao-cta">Ver Produtos</a>
+  </section>
+
+  <footer class="footer">
+    <!-- mesmo footer da home -->
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.quem-somos', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 1000,
+      delay: 100,
+      reset: false
+    });
+
+    ScrollReveal().reveal('.missao-visao-valores .item', {
+      origin: 'bottom',
+      distance: '30px',
+      duration: 800,
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.cta-final', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 900,
+      delay: 100
+    });
+  </script>
+<footer class="footer">
+    <div class="testediv">ONDE ESTAMOS</div>
+    <section class="contato-mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.688236921666!2d-48.867013384637!3d-26.30930208319094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafe07ceae44b%3A0x5c7f987e8d12a421!2sR.%20Bag%C3%A9%2C%20441%20-%20Anita%20Garibaldi%2C%20Joinville%20-%20SC%2C%2089203-290!5e0!3m2!1spt-BR!2sbr!4v1713894156071!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+    <div class="newsletter">
+        <p><h1> Assine nossa newsletter e receba novidades em seu E-mail</h1></p>
+        <form>
+            <input type="text" placeholder="Digite seu Nome">
+            <input type="email" placeholder="Digite seu E-mail">
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <div class="footer-main">
+        <div class="footer-column">
+            <h4>INSTITUCIONAL</h4>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
+                <li><a href="#">Jartec Online</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>CENTRAL DO CLIENTE</h4>
+            <ul>
+                <li><a href="#">Como Comprar?</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Central de Atendimento</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>ATENDIMENTO</h4>
+            <p><i class="fas fa-phone"></i> 47 2107 0028</p>
+            <p><i class="fas fa-headset"></i> Atendimento Online</p>
+        </div>
+       
+          
+    </div>
+
+   
+</footer>
+</body>
+</html>
