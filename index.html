@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Hidraultec - Soluções Hidráulicas</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="main.js"></script>
 </head>
 <body>
-<header class="header">
+    <!-- Header -->
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="img/logo_hidraultec.png" alt="Hidraultec Logo">
         </a>
@@ -27,6 +27,7 @@
         </div>
     </header>
     
+    <!-- Banner Principal -->
     <section class="home-banner">
         <img src="img/BannerHomePage.png" alt="Banner principal da Hidraultec">
         <div class="banner-texto">
@@ -35,13 +36,13 @@
         </div>
     </section>
 
-    <!-- Carrosséis posicionados logo após o banner -->
+    <!-- Carrosséis de Logos -->
     <section class="carroseis-section">
         <div class="container-logos">
             <div class="bloco-logo">
                 <h3>ALGUNS DE NOSSOS DISTRIBUIDORES E PARCEIROS</h3>
                 <div class="carousel-wrapper">
-                    <div class="carousel-track">
+                    <div class="carousel-track" id="carousel-parceiros">
                         <img src="img/logo_danfoss.png" alt="Danfoss">
                         <img src="img/logo_vickers.png" alt="Vickers">
                         <img src="img/logo_weg.png" alt="WEG">
@@ -55,7 +56,7 @@
             <div class="bloco-logo">
                 <h3>ALGUNS DE NOSSOS CLIENTES</h3>
                 <div class="carousel-wrapper">
-                    <div class="carousel-track">
+                    <div class="carousel-track" id="carousel-clientes">
                         <img src="img/logo_klabin.png" alt="Klabin">
                         <img src="img/logo_valmet.png" alt="Valmet">
                         <img src="img/logo_arcelor.png" alt="ArcelorMittal">
@@ -77,6 +78,7 @@
         </div>
     </section>
       
+    <!-- CTA Produtos -->
     <section class="cta-produtos-img">
         <div class="cta-conteudo">
             <h2>Conheça nossos produtos</h2>
@@ -85,7 +87,8 @@
         </div>
     </section>
 
-    <section class="servicos" style="padding: 40px 20px;">
+    <!-- Seção Diferenciais -->
+    <section class="servicos">
         <h2>DIFERENCIAIS</h2>
         <div class="linha"></div>
         <div class="servicos-cards">
@@ -104,6 +107,7 @@
         </div>
     </section>
 
+    <!-- Banner Final -->
     <section class="home-banner banner-final">
         <img src="img/BannerInferiorHomePage.png" alt="Banner institucional final">
         <div class="banner-texto destaque-final">
@@ -115,7 +119,9 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
+        <!-- Onde Estamos -->
         <div class="testediv">ONDE ESTAMOS</div>
         <section class="contato-mapa">
           <iframe 
@@ -129,8 +135,9 @@
           </iframe>
         </section>
 
+        <!-- Newsletter -->
         <div class="newsletter">
-            <p><h1> Assine nossa newsletter e receba novidades em seu E-mail</h1></p>
+            <h1>Assine nossa newsletter e receba novidades em seu E-mail</h1>
             <form>
                 <input type="text" placeholder="Digite seu Nome">
                 <input type="email" placeholder="Digite seu E-mail">
@@ -138,13 +145,14 @@
             </form>
         </div>
 
+        <!-- Footer Institucional -->
         <div class="footer-main">
             <div class="footer-column">
                 <h4>INSTITUCIONAL</h4>
                 <ul>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
-                    <li><a href="#">Jartec Online</a></li>
+                    <li><a href="#">Jarec Online</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -158,11 +166,16 @@
             </div>
             <div class="footer-column">
                 <h4>ATENDIMENTO</h4>
-                <p><i class="fas fa-phone"></i> 47 2107 0028</p>
-                <p><i class="fas fa-headset"></i> Atendimento Online</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 47 2107 0028</li>
+                    <li><i class="fas fa-headset"></i> Atendimento Online</li>
+                </ul>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
 </body>
 </html>
 

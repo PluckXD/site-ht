@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Hidraultec</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Contato - Hidraultec</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-  <header class="header">
+    <!-- Header -->
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="img/logo_hidraultec.png" alt="Hidraultec Logo">
         </a>
@@ -27,93 +27,262 @@
         </div>
     </header>
 
-  <section class="banner-contato">
-    <img src="img/imgcontato.png" alt="Banner Contato">
-    <div class="texto-banner">
-      <h1>Fale com a nossa equipe</h1>
-    </div>
-  </section>
-
-  <section class="contato-formulario">
-    <h2>Entre em Contato</h2>
-    <p>Preencha o formulário abaixo e responderemos o mais breve possível.</p>
-
-    <form action="#" method="post" class="formulario">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="tel" name="telefone" placeholder="Telefone">
-      <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar mensagem</button>
-    </form>
-  </section>
-
-  <section class="contato-info">
-    <div class="info-item">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>R. Bagé, 441 - Anita Garibaldi<br>Joinville - SC, 89203-290</p>
-    </div>
-    <div class="info-item">
-      <i class="fas fa-phone-alt"></i>
-      <p>(32) 98431-4726</p>
-    </div>
-    <div class="info-item">
-      <i class="fas fa-envelope"></i>
-      <p>contato@hidraultec.com.br</p><br>
-    </div>
-  </section>
-
-  
-  <footer class="footer">
-    <div class="testediv">ONDE ESTAMOS</div>
-    <section class="contato-mapa">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.688236921666!2d-48.867013384637!3d-26.30930208319094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafe07ceae44b%3A0x5c7f987e8d12a421!2sR.%20Bag%C3%A9%2C%20441%20-%20Anita%20Garibaldi%2C%20Joinville%20-%20SC%2C%2089203-290!5e0!3m2!1spt-BR!2sbr!4v1713894156071!5m2!1spt-BR!2sbr"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <!-- Banner Contato -->
+    <section class="banner-contato">
+        <img src="img/imgcontato.png" alt="Banner Contato">
+        <div class="texto-banner">
+            <h1>Fale com a nossa equipe</h1>
+            <p>Estamos prontos para atender suas necessidades</p>
+        </div>
     </section>
-    <div class="newsletter">
-        <p><h1> Assine nossa newsletter e receba novidades em seu E-mail</h1></p>
-        <form>
-            <input type="text" placeholder="Digite seu Nome">
-            <input type="email" placeholder="Digite seu E-mail">
-            <button type="submit">ENVIAR</button>
-        </form>
-    </div>
 
-    <div class="footer-main">
-        <div class="footer-column">
-            <h4>INSTITUCIONAL</h4>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
-                <li><a href="#">Jartec Online</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>CENTRAL DO CLIENTE</h4>
-            <ul>
-                <li><a href="#">Como Comprar?</a></li>
-                <li><a href="#">Trocas e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Central de Atendimento</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>ATENDIMENTO</h4>
-            <p><i class="fas fa-phone"></i> 47 2107 0028</p>
-            <p><i class="fas fa-headset"></i> Atendimento Online</p>
-        </div>
-       
-          
-    </div>
+    <!-- Seção Principal de Contato -->
+    <section class="contato-principal">
+        <div class="container">
+            <div class="contato-grid">
+                <!-- Formulário de Contato -->
+                <div class="formulario-container">
+                    <h2>Entre em Contato</h2>
+                    <p>Preencha o formulário abaixo e responderemos o mais breve possível. Nossa equipe está pronta para ajudar você a encontrar a melhor solução hidráulica.</p>
 
-   
-</footer>
+                    <form class="formulario-contato" id="contatoForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                            <i class="fas fa-user form-icon"></i>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                            <i class="fas fa-envelope form-icon"></i>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
+                                <i class="fas fa-building form-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Solicitação de Orçamento</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="manutencao">Manutenção</option>
+                                <option value="projeto">Projeto Personalizado</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <i class="fas fa-list form-icon"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua necessidade ou dúvida..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="info-container">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="contato-cards">
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Endereço</h4>
+                                <p>R. Bagé, 441 - Anita Garibaldi<br>Joinville - SC, 89203-290</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Telefone</h4>
+                                <p>(47) 3466-7777</p>
+                                <p>(32) 98431-4726</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>E-mail</h4>
+                                <p>contato@hidraultec.com.br</p>
+                                <p>vendas@hidraultec.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                                <p>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Contato Rápido -->
+                    <div class="contato-rapido">
+                        <h4>Contato Rápido</h4>
+                        <div class="botoes-rapidos">
+                            <a href="https://wa.me/554734667777" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                            <a href="mailto:contato@hidraultec.com.br" class="btn-email">
+                                <i class="fas fa-envelope"></i>
+                                E-mail
+                            </a>
+                            <a href="tel:+554734667777" class="btn-telefone">
+                                <i class="fas fa-phone"></i>
+                                Ligar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o prazo para resposta de orçamentos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Respondemos todos os orçamentos em até 24 horas úteis. Para projetos mais complexos, o prazo pode ser de até 48 horas para uma análise mais detalhada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Vocês atendem em todo o Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, atendemos clientes em todo o território nacional. Para regiões mais distantes, avaliamos a viabilidade logística e oferecemos as melhores condições.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Oferecem suporte técnico pós-venda?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos suporte técnico completo, incluindo manutenção preventiva, corretiva e assistência 24/7 para emergências. Nossa equipe está sempre disponível.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Fazem projetos personalizados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nossa especialidade são projetos personalizados. Desenvolvemos soluções sob medida para cada necessidade, desde o conceito até a implementação completa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual a garantia dos produtos e serviços?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos garantia de 12 meses para produtos e serviços, podendo ser estendida conforme o tipo de projeto. Todos os detalhes são especificados no contrato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Onde Estamos -->
+        <div class="testediv">ONDE ESTAMOS</div>
+        <section class="contato-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.688236921666!2d-48.867013384637!3d-26.30930208319094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafe07ceae44b%3A0x5c7f987e8d12a421!2sR.%20Bag%C3%A9%2C%20441%20-%20Anita%20Garibaldi%2C%20Joinville%20-%20SC%2C%2089203-290!5e0!3m2!1spt-BR!2sbr!4v1713894156071!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h1>Assine nossa newsletter e receba novidades em seu E-mail</h1>
+            <form>
+                <input type="text" placeholder="Digite seu Nome">
+                <input type="email" placeholder="Digite seu E-mail">
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+        <!-- Footer Institucional -->
+        <div class="footer-main">
+            <div class="footer-column">
+                <h4>INSTITUCIONAL</h4>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
+                    <li><a href="#">Jarec Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CENTRAL DO CLIENTE</h4>
+                <ul>
+                    <li><a href="#">Como Comprar?</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Central de Atendimento</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>ATENDIMENTO</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 47 2107 0028</li>
+                    <li><i class="fas fa-headset"></i> Atendimento Online</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="contato.js"></script>
 </body>
 </html>
+

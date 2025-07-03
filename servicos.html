@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Serviços - Hidraultec</title>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Serviços - Hidraultec</title>
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-  <header class="header">
+    <!-- Header -->
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="img/logo_hidraultec.png" alt="Hidraultec Logo">
         </a>
@@ -27,125 +27,316 @@
         </div>
     </header>
 
-  <section class="banner-servicos">
-    <img src="img/banner-servicos.jpg" alt="Serviços da Hidraultec">
-    <div class="texto-banner">
-      <h1>Soluções completas em serviços hidráulicos</h1>
-    </div>
-  </section>
-
-  <section class="servicos-intro">
-    <h2>O que oferecemos</h2>
-    <p>Nossos serviços abrangem desde a consultoria e projeto até a execução e manutenção de sistemas hidráulicos industriais. Atuamos com comprometimento e alta especialização em todas as etapas.</p>
-  </section>
-
-  <section class="cards-servicos">
-    <div class="card-servico">
-      <i class="fas fa-tools"></i>
-      <h3>Manutenção Preventiva e Corretiva</h3>
-      <p>Garantia de performance, segurança e aumento da vida útil dos seus sistemas hidráulicos.</p>
-    </div>
-    <div class="card-servico">
-      <i class="fas fa-cogs"></i>
-      <h3>Automatização Hidráulica</h3>
-      <p>Implementação de sistemas automáticos para ganhos em produtividade e precisão.</p>
-    </div>
-    <div class="card-servico">
-      <i class="fas fa-drafting-compass"></i>
-      <h3>Projetos Personalizados</h3>
-      <p>Engenharia dedicada para desenvolver soluções sob medida para sua operação.</p>
-    </div>
-    <div class="card-servico">
-      <i class="fas fa-headset"></i>
-      <h3>Assistência Técnica Especializada</h3>
-      <p>Atendimento rápido e suporte completo com profissionais qualificados.</p>
-    </div>
-  </section>
-
-  <section class="cta-final">
-    <h2>Solicite um orçamento agora mesmo</h2>
-    <p>Nossa equipe está pronta para entender sua necessidade e indicar a melhor solução hidráulica.</p>
-    <a href="contato.html" class="botao-cta">Entrar em Contato</a>
-  </section>
-
-  <footer class="footer">
-    <!-- mesmo footer da home -->
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal().reveal('.servicos-intro', {
-      origin: 'bottom',
-      distance: '40px',
-      duration: 1000,
-      delay: 100,
-      reset: false
-    });
-
-    ScrollReveal().reveal('.card-servico', {
-      origin: 'bottom',
-      distance: '30px',
-      duration: 800,
-      interval: 150
-    });
-
-    ScrollReveal().reveal('.cta-final', {
-      origin: 'bottom',
-      distance: '40px',
-      duration: 900,
-      delay: 100
-    });
-  </script>
-<footer class="footer">
-    <div class="testediv">ONDE ESTAMOS</div>
-    <section class="contato-mapa">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.688236921666!2d-48.867013384637!3d-26.30930208319094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafe07ceae44b%3A0x5c7f987e8d12a421!2sR.%20Bag%C3%A9%2C%20441%20-%20Anita%20Garibaldi%2C%20Joinville%20-%20SC%2C%2089203-290!5e0!3m2!1spt-BR!2sbr!4v1713894156071!5m2!1spt-BR!2sbr"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <!-- Banner Serviços -->
+    <section class="banner-servicos">
+        <img src="img/banner-servicos.jpg" alt="Serviços da Hidraultec">
+        <div class="texto-banner">
+            <h1>Soluções completas em serviços hidráulicos</h1>
+            <p>Excelência técnica e inovação em cada projeto</p>
+        </div>
     </section>
-    <div class="newsletter">
-        <p><h1> Assine nossa newsletter e receba novidades em seu E-mail</h1></p>
-        <form>
-            <input type="text" placeholder="Digite seu Nome">
-            <input type="email" placeholder="Digite seu E-mail">
-            <button type="submit">ENVIAR</button>
-        </form>
-    </div>
 
-    <div class="footer-main">
-        <div class="footer-column">
-            <h4>INSTITUCIONAL</h4>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
-                <li><a href="#">Jartec Online</a></li>
-            </ul>
+    <!-- Introdução dos Serviços -->
+    <section class="servicos-intro">
+        <div class="container">
+            <h2>O que oferecemos</h2>
+            <p>Nossos serviços abrangem desde a consultoria e projeto até a execução e manutenção de sistemas hidráulicos industriais. Atuamos com comprometimento e alta especialização em todas as etapas, garantindo soluções eficientes e duradouras para sua empresa.</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projetos Realizados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Clientes Atendidos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Horas de Suporte</div>
+                </div>
+            </div>
         </div>
-        <div class="footer-column">
-            <h4>CENTRAL DO CLIENTE</h4>
-            <ul>
-                <li><a href="#">Como Comprar?</a></li>
-                <li><a href="#">Trocas e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Central de Atendimento</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>ATENDIMENTO</h4>
-            <p><i class="fas fa-phone"></i> 47 2107 0028</p>
-            <p><i class="fas fa-headset"></i> Atendimento Online</p>
-        </div>
-       
-          
-    </div>
+    </section>
 
-   
-</footer>
+    <!-- Nossos Serviços Principais -->
+    <section class="servicos-principais">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Manutenção Preventiva e Corretiva</h3>
+                        <p>Garantia de performance, segurança e aumento da vida útil dos seus sistemas hidráulicos com manutenções programadas e intervenções rápidas.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Inspeções periódicas</li>
+                            <li><i class="fas fa-check"></i> Diagnósticos precisos</li>
+                            <li><i class="fas fa-check"></i> Substituição de componentes</li>
+                            <li><i class="fas fa-check"></i> Relatórios detalhados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Automatização Hidráulica</h3>
+                        <p>Implementação de sistemas automáticos para ganhos em produtividade, precisão e redução de custos operacionais.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Sistemas CLP</li>
+                            <li><i class="fas fa-check"></i> Interfaces HMI</li>
+                            <li><i class="fas fa-check"></i> Sensores inteligentes</li>
+                            <li><i class="fas fa-check"></i> Controle remoto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Projetos Personalizados</h3>
+                        <p>Engenharia dedicada para desenvolver soluções sob medida para sua operação, desde o conceito até a implementação.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Análise de necessidades</li>
+                            <li><i class="fas fa-check"></i> Modelagem 3D</li>
+                            <li><i class="fas fa-check"></i> Simulações avançadas</li>
+                            <li><i class="fas fa-check"></i> Documentação técnica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="servico-card">
+                    <div class="card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Assistência Técnica Especializada</h3>
+                        <p>Atendimento rápido e suporte completo com profissionais qualificados, disponível 24 horas para emergências.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                            <li><i class="fas fa-check"></i> Atendimento remoto</li>
+                            <li><i class="fas fa-check"></i> Equipe especializada</li>
+                            <li><i class="fas fa-check"></i> Peças originais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo de Trabalho -->
+    <section class="processo-trabalho">
+        <div class="container">
+            <h2>Nosso Processo de Trabalho</h2>
+            <div class="processo-timeline">
+                <div class="processo-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Análise e Diagnóstico</h3>
+                        <p>Avaliação completa das necessidades e condições atuais do sistema hidráulico.</p>
+                    </div>
+                </div>
+                <div class="processo-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planejamento e Projeto</h3>
+                        <p>Desenvolvimento de soluções personalizadas com cronograma detalhado.</p>
+                    </div>
+                </div>
+                <div class="processo-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Execução</h3>
+                        <p>Implementação do projeto com acompanhamento técnico especializado.</p>
+                    </div>
+                </div>
+                <div class="processo-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Testes e Validação</h3>
+                        <p>Verificação completa do funcionamento e performance do sistema.</p>
+                    </div>
+                </div>
+                <div class="processo-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Suporte Contínuo</h3>
+                        <p>Acompanhamento pós-implementação e manutenção preventiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section class="areas-atuacao">
+        <div class="container">
+            <h2>Áreas de Atuação</h2>
+            <div class="areas-grid">
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Indústria Metalúrgica</h3>
+                    <p>Sistemas hidráulicos para prensas, laminadores e equipamentos de conformação.</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Papel e Celulose</h3>
+                    <p>Soluções para máquinas de papel, digestores e sistemas de transporte.</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automotiva</h3>
+                    <p>Equipamentos para linhas de produção, prensas e sistemas de montagem.</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Alimentícia</h3>
+                    <p>Sistemas sanitários para processamento e embalagem de alimentos.</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Naval</h3>
+                    <p>Equipamentos hidráulicos para embarcações e plataformas marítimas.</p>
+                    </div>
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Construção Civil</h3>
+                    <p>Sistemas para guindastes, escavadeiras e equipamentos de construção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Técnicos -->
+    <section class="diferenciais-tecnicos">
+        <div class="container">
+            <h2>Diferenciais Técnicos</h2>
+            <div class="diferenciais-container">
+                <div class="diferencial-tech">
+                    <div class="tech-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Análise Avançada</h3>
+                    <p>Utilizamos equipamentos de última geração para análise de fluidos, vibrações e performance dos sistemas.</p>
+                </div>
+                <div class="diferencial-tech">
+                    <div class="tech-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Simulação Digital</h3>
+                    <p>Modelagem computacional 3D e simulações para otimização antes da implementação física.</p>
+                </div>
+                <div class="diferencial-tech">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Certificações</h3>
+                    <p>Todos os nossos serviços seguem normas internacionais de qualidade e segurança.</p>
+                </div>
+                <div class="diferencial-tech">
+                    <div class="tech-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Resposta Rápida</h3>
+                    <p>Equipe de plantão 24/7 para atendimento de emergências e suporte técnico imediato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Solicite um orçamento agora mesmo</h2>
+            <p>Nossa equipe está pronta para entender sua necessidade e indicar a melhor solução hidráulica para seu negócio.</p>
+            <div class="cta-buttons">
+                <a href="contato.html" class="botao-cta primary">Entrar em Contato</a>
+                <a href="https://wa.me/554734667777" class="botao-cta secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Onde Estamos -->
+        <div class="testediv">ONDE ESTAMOS</div>
+        <section class="contato-mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.688236921666!2d-48.867013384637!3d-26.30930208319094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafe07ceae44b%3A0x5c7f987e8d12a421!2sR.%20Bag%C3%A9%2C%20441%20-%20Anita%20Garibaldi%2C%20Joinville%20-%20SC%2C%2089203-290!5e0!3m2!1spt-BR!2sbr!4v1713894156071!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h1>Assine nossa newsletter e receba novidades em seu E-mail</h1>
+            <form>
+                <input type="text" placeholder="Digite seu Nome">
+                <input type="email" placeholder="Digite seu E-mail">
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+        <!-- Footer Institucional -->
+        <div class="footer-main">
+            <div class="footer-column">
+                <h4>INSTITUCIONAL</h4>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
+                    <li><a href="#">Jarec Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CENTRAL DO CLIENTE</h4>
+                <ul>
+                    <li><a href="#">Como Comprar?</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Central de Atendimento</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>ATENDIMENTO</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 47 2107 0028</li>
+                    <li><i class="fas fa-headset"></i> Atendimento Online</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="servicos.js"></script>
 </body>
 </html>
+
