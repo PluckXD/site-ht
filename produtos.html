@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <title>Produtos - Hidraultec</title>
+    <meta name="description" content="Conheça nossa linha completa de produtos hidráulicos: bombas, cilindros, válvulas, filtros, instrumentação e muito mais.">
     <link rel="stylesheet" href="produtos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -27,340 +28,441 @@
         </div>
     </header>
 
-    <!-- Banner Produtos -->
+    <!-- Banner de Produtos -->
     <section class="produtos-banner">
         <div class="banner-overlay"></div>
         <div class="banner-content">
-            <h1>Soluções Industriais em Sistemas Hidráulicos</h1>
-            <p>Confira nossa linha completa de produtos industriais de alta performance</p>
-            <div class="banner-stats">
-                <div class="stat">
-                    <span class="number">500+</span>
-                    <span class="label">Produtos</span>
+            <h1>Nossos Produtos</h1>
+            <p>Soluções completas em sistemas hidráulicos com qualidade garantida</p>
+            <div class="stats-banner">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">PRODUTOS</span>
                 </div>
-                <div class="stat">
-                    <span class="number">25</span>
-                    <span class="label">Anos</span>
+                <div class="stat-item">
+                    <span class="stat-number">25</span>
+                    <span class="stat-label">ANOS</span>
                 </div>
-                <div class="stat">
-                    <span class="number">100%</span>
-                    <span class="label">Qualidade</span>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">QUALIDADE</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Filtros e Busca -->
-    <section class="filtros-section">
+    <!-- Seção Principal de Produtos -->
+    <section class="produtos-section">
         <div class="container">
-            <div class="filtros-container">
+            <!-- Cabeçalho com Busca -->
+            <div class="produtos-header">
                 <div class="busca-container">
-                    <div class="search-box">
-                        <input type="text" id="searchInput" placeholder="Buscar produtos...">
-                        <button type="button" id="searchBtn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="filtros-rapidos">
-                    <button class="filtro-btn active" data-categoria="todos">
-                        <i class="fas fa-th"></i>
-                        Todos
-                    </button>
-                    <button class="filtro-btn" data-categoria="bombas">
-                        <i class="fas fa-cog"></i>
-                        Bombas
-                    </button>
-                    <button class="filtro-btn" data-categoria="cilindros">
-                        <i class="fas fa-tools"></i>
-                        Cilindros
-                    </button>
-                    <button class="filtro-btn" data-categoria="valvulas">
-                        <i class="fas fa-valve"></i>
-                        Válvulas
-                    </button>
-                    <button class="filtro-btn" data-categoria="filtros">
-                        <i class="fas fa-filter"></i>
-                        Filtros
-                    </button>
-                    <button class="filtro-btn" data-categoria="acessorios">
-                        <i class="fas fa-wrench"></i>
-                        Acessórios
-                    </button>
+                    <input type="text" id="busca-produtos" placeholder="Buscar produtos, marcas ou categorias...">
+                    <i class="fas fa-search"></i>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Produtos Principal -->
-    <section class="produtos-principal">
-        <div class="container">
+            <!-- Filtros Rápidos -->
+            <div class="filtros-rapidos">
+                <button class="filtro-rapido active" data-categoria="todos">
+                    <i class="fas fa-th"></i> TODOS
+                </button>
+                <button class="filtro-rapido" data-categoria="bombas">
+                    <i class="fas fa-cog"></i> BOMBAS
+                </button>
+                <button class="filtro-rapido" data-categoria="cilindros">
+                    <i class="fas fa-tools"></i> CILINDROS
+                </button>
+                <button class="filtro-rapido" data-categoria="valvulas">
+                    <i class="fas fa-valve"></i> VÁLVULAS
+                </button>
+                <button class="filtro-rapido" data-categoria="blocos">
+                    <i class="fas fa-cube"></i> BLOCOS
+                </button>
+                <button class="filtro-rapido" data-categoria="filtros">
+                    <i class="fas fa-filter"></i> FILTROS
+                </button>
+                <button class="filtro-rapido" data-categoria="instrumentacao">
+                    <i class="fas fa-gauge"></i> INSTRUMENTAÇÃO
+                </button>
+                <button class="filtro-rapido" data-categoria="acessorios">
+                    <i class="fas fa-wrench"></i> ACESSÓRIOS
+                </button>
+                <button class="filtro-rapido" data-categoria="unidades">
+                    <i class="fas fa-industry"></i> UNIDADES
+                </button>
+            </div>
+
+            <!-- Layout Principal -->
             <div class="produtos-layout">
-                <!-- Sidebar de Categorias -->
-                <aside class="categorias-sidebar">
-                    <div class="sidebar-header">
-                        <h2>Categorias</h2>
-                        <button class="sidebar-toggle" id="sidebarToggle">
-                            <i class="fas fa-bars"></i>
-                        </button>
+                <!-- Menu Lateral -->
+                <aside class="menu-lateral">
+                    <div class="menu-header">
+                        <h3><i class="fas fa-list"></i> Categorias</h3>
                     </div>
-                    
-                    <div class="categorias-content">
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="bombas">
-                                <i class="fas fa-cog"></i>
-                                <span>teste</span>
-                                <i class="fas fa-chevron-down arrow"></i>
-                            </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>Palhetas (V20, PVQ, PHV)</span>
-                                        <span>Pistões</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Danfoss</span>
-                                    <div class="sub-items">
-                                        <span>Pistões (L, K, J, G, E)</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Hidraultec</span>
-                                    <div class="sub-items">
-                                        <span>ENGR (S10, S11, S12, S17)</span>
-                                        <span>Personalizados</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="cilindros">
-                                <i class="fas fa-tools"></i>
-                                <span>Cilindros</span>
-                                <i class="fas fa-chevron-down arrow"></i>
-                            </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>TV, TE, MLL TIDE</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Rexroth</span>
-                                    <div class="sub-items">
-                                        <span>CDT3, CDH2</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Especiais</span>
-                                    <div class="sub-items">
-                                        <span>Quadrados, Soldados</span>
-                                        <span>Simples Ação</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- 1. BOMBAS HIDRÁULICAS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('bombas')">
+                            <i class="fas fa-cog categoria-icon"></i>
+                            <span>Bombas Hidráulicas</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
                         </div>
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="cilindros">
-                                <i class="fas fa-tools"></i>
-                                <span>Cilindros</span>
-                                <i class="fas fa-chevron-down arrow"></i>
-                            </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>TV, TE, MLL TIDE</span>
-                                    </div>
+                        <div class="categoria-content" id="bombas">
+                            <!-- Bombas VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="toggleSubcategoria('bombas-vickers')">
+                                    <span>Bombas VICKERS</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Rexroth</span>
-                                    <div class="sub-items">
-                                        <span>CDT3, CDH2</span>
+                                <div class="subcategoria-content" id="bombas-vickers">
+                                    <!-- Bombas de palhetas -->
+                                    <div class="sub-subcategoria-item">
+                                        <div class="sub-subcategoria-header" onclick="filtrarPorSubcategoria('bombas-vickers-palhetas')">
+                                            <span>Bombas de palhetas</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Especiais</span>
-                                    <div class="sub-items">
-                                        <span>Quadrados, Soldados</span>
-                                        <span>Simples Ação</span>
+                                    <!-- Bombas de pistões -->
+                                    <div class="sub-subcategoria-item">
+                                        <div class="sub-subcategoria-header" onclick="filtrarPorSubcategoria('bombas-vickers-pistoes')">
+                                            <span>Bombas de pistões</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="cilindros">
-                                <i class="fas fa-tools"></i>
-                                <span>Cilindros</span>
-                                <i class="fas fa-chevron-down arrow"></i>
-                            </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>TV, TE, MLL TIDE</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Rexroth</span>
-                                    <div class="sub-items">
-                                        <span>CDT3, CDH2</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Especiais</span>
-                                    <div class="sub-items">
-                                        <span>Quadrados, Soldados</span>
-                                        <span>Simples Ação</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="cilindros">
-                                <i class="fas fa-tools"></i>
-                                <span>Cilindros</span>
-                                <i class="fas fa-chevron-down arrow"></i>
-                            </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>TV, TE, MLL TIDE</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Rexroth</span>
-                                    <div class="sub-items">
-                                        <span>CDT3, CDH2</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Especiais</span>
-                                    <div class="sub-items">
-                                        <span>Quadrados, Soldados</span>
-                                        <span>Simples Ação</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="valvulas">
-                                <i class="fas fa-valve"></i>
-                                <span>Válvulas</span>
-                                <i class="fas fa-chevron-down arrow"></i>
+                            <!-- Produtos de submenu (aparecem no menu) -->
+                            <div class="produto-submenu-item" onclick="abrirModal('bomba-danfoss-s45')">
+                                <i class="fas fa-star"></i>
+                                <span>Bombas DANFOSS série S45</span>
                             </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Vickers</span>
-                                    <div class="sub-items">
-                                        <span>Direcionais (TN06-TN32)</span>
-                                        <span>Pressão (CT06, CT10)</span>
-                                        <span>Modulares (DGMFN, DGMPC)</span>
-                                    </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('bomba-a10vso')">
+                                <i class="fas fa-star"></i>
+                                <span>Bombas de pistões série A10VSO</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('bomba-engrenagens-s')">
+                                <i class="fas fa-star"></i>
+                                <span>Bombas Engrenagens série "S"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. CILINDROS HIDRÁULICOS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('cilindros')">
+                            <i class="fas fa-tools categoria-icon"></i>
+                            <span>Cilindros Hidráulicos</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="cilindros">
+                            <div class="fabricacao-info">
+                                <i class="fas fa-industry"></i>
+                                <span>Todos os cilindros são fabricados pela Hidraultec</span>
+                            </div>
+                            
+                            <!-- Cilindros VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('cilindros-vickers')">
+                                    <span>Cilindros VICKERS</span>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Hidraultec Similares</span>
-                                    <div class="sub-items">
-                                        <span>Pressão, Direcionais</span>
-                                        <span>Modulares</span>
-                                    </div>
+                            </div>
+
+                            <!-- Cilindros Rexroth -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('cilindros-rexroth')">
+                                    <span>Cilindros Rexroth</span>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Proporcionais</span>
+                            </div>
+
+                            <!-- Produto de submenu -->
+                            <div class="produto-submenu-item" onclick="abrirModal('cilindros-especiais')">
+                                <i class="fas fa-star"></i>
+                                <span>Cilindros especiais</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. VÁLVULAS HIDRÁULICAS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('valvulas')">
+                            <i class="fas fa-valve categoria-icon"></i>
+                            <span>Válvulas Hidráulicas</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="valvulas">
+                            <!-- Direcionais VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('direcionais-vickers')">
+                                    <span>Direcionais VICKERS</span>
+                                </div>
+                            </div>
+
+                            <!-- Modulares VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('modulares-vickers')">
+                                    <span>Modulares VICKERS</span>
+                                </div>
+                            </div>
+
+                            <!-- Pressão VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('pressao-vickers')">
+                                    <span>Pressão VICKERS</span>
+                                </div>
+                            </div>
+
+                            <!-- Vazão VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('vazao-vickers')">
+                                    <span>Vazão VICKERS</span>
+                                </div>
+                            </div>
+
+                            <!-- Produto de submenu -->
+                            <div class="produto-submenu-item" onclick="abrirModal('retencoes-dt8p1')">
+                                <i class="fas fa-star"></i>
+                                <span>Retenções VICKERS série DT8P1</span>
+                            </div>
+
+                            <!-- Proporcionais VICKERS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('proporcionais-vickers')">
+                                    <span>Proporcionais VICKERS</span>
+                                </div>
+                            </div>
+
+                            <!-- Comandos DANFOSS -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('comandos-danfoss')">
+                                    <span>Comandos hidr. DANFOSS</span>
+                                </div>
+                            </div>
+
+                            <!-- Linha HIDRAULTEC -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="toggleSubcategoria('linha-hidraultec')">
+                                    <span>Linha HIDRAULTEC</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="subcategoria-content" id="linha-hidraultec">
+                                    <!-- Direcionais -->
+                                    <div class="sub-subcategoria-item">
+                                        <div class="sub-subcategoria-header" onclick="filtrarPorSubcategoria('direcionais-hidraultec')">
+                                            <span>Direcionais</span>
+                                        </div>
+                                    </div>
+                                    <!-- Modulares -->
+                                    <div class="sub-subcategoria-item">
+                                        <div class="sub-subcategoria-header" onclick="filtrarPorSubcategoria('modulares-hidraultec')">
+                                            <span>Modulares</span>
+                                        </div>
+                                    </div>
+                                    <!-- Produtos de submenu -->
+                                    <div class="produto-submenu-item" onclick="abrirModal('reguladoras-danfoss-h')">
+                                        <i class="fas fa-star"></i>
+                                        <span>Reguladoras Danfoss "H"</span>
+                                    </div>
+                                    <div class="produto-submenu-item" onclick="abrirModal('vazao-drv')">
+                                        <i class="fas fa-star"></i>
+                                        <span>Vazão série DRV</span>
+                                    </div>
+                                    <div class="produto-submenu-item" onclick="abrirModal('retencoes-s10a')">
+                                        <i class="fas fa-star"></i>
+                                        <span>Retenções S10A</span>
+                                    </div>
+                                    <!-- Comandos manuais -->
+                                    <div class="sub-subcategoria-item">
+                                        <div class="sub-subcategoria-header" onclick="filtrarPorSubcategoria('comandos-manuais')">
+                                            <span>Comandos manuais</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="filtros">
-                                <i class="fas fa-filter"></i>
-                                <span>Filtros</span>
-                                <i class="fas fa-chevron-down arrow"></i>
+                    <!-- 4. BLOCOS HIDRÁULICOS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('blocos')">
+                            <i class="fas fa-cube categoria-icon"></i>
+                            <span>Blocos Hidráulicos</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="blocos">
+                            <div class="produto-submenu-item" onclick="abrirModal('blocos-tn06')">
+                                <i class="fas fa-star"></i>
+                                <span>Blocos TN06</span>
                             </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Filtros de Ar/Bocal</span>
-                                    <div class="sub-items">
-                                        <span>BE761, BE762, BE1004</span>
-                                    </div>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Filtros de Retorno</span>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Filtros de Sucção</span>
-                                </div>
-                                <div class="subcategoria">
-                                    <span>Filtros de Pressão</span>
+                            <div class="produto-submenu-item" onclick="abrirModal('blocos-tn10')">
+                                <i class="fas fa-star"></i>
+                                <span>Blocos TN10</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('blocos-especiais')">
+                                <i class="fas fa-star"></i>
+                                <span>Blocos e placas especiais</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. FILTROS INDUSTRIAIS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('filtros')">
+                            <i class="fas fa-filter categoria-icon"></i>
+                            <span>Filtros Industriais</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="filtros">
+                            <div class="produto-submenu-item" onclick="abrirModal('filtros-ar')">
+                                <i class="fas fa-star"></i>
+                                <span>Filtros de ar e enchimento</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('filtros-retorno')">
+                                <i class="fas fa-star"></i>
+                                <span>Filtros de retorno</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('filtros-succao')">
+                                <i class="fas fa-star"></i>
+                                <span>Filtros de Sucção</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('filtros-pressao')">
+                                <i class="fas fa-star"></i>
+                                <span>Filtros de pressão</span>
+                            </div>
+
+                            <!-- Acessórios para filtros -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('acessorios-filtros')">
+                                    <span>Acessórios para filtros</span>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="categoria-item">
-                            <div class="categoria-header" data-categoria="acessorios">
-                                <i class="fas fa-wrench"></i>
-                                <span>Acessórios</span>
-                                <i class="fas fa-chevron-down arrow"></i>
+                    <!-- 6. INSTRUMENTAÇÃO -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('instrumentacao')">
+                            <i class="fas fa-gauge categoria-icon"></i>
+                            <span>Instrumentação</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="instrumentacao">
+                            <!-- Manômetros -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('manometros')">
+                                    <span>Manômetros</span>
+                                </div>
                             </div>
-                            <div class="subcategorias">
-                                <div class="subcategoria">
-                                    <span>Isoladoras</span>
+
+                            <!-- Sensores de pressão -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('sensores-pressao')">
+                                    <span>Sensores de pressão</span>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Acoplamentos</span>
+                            </div>
+
+                            <!-- Pressostatos -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('pressostatos')">
+                                    <span>Pressostatos</span>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Trocadores de Calor</span>
-                                    <div class="sub-items">
-                                        <span>Ar-Óleo, Água-Óleo</span>
-                                    </div>
+                            </div>
+
+                            <!-- Produto de submenu -->
+                            <div class="produto-submenu-item" onclick="abrirModal('termostatos')">
+                                <i class="fas fa-star"></i>
+                                <span>Termostatos</span>
+                            </div>
+
+                            <!-- Sensores de nível -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('sensores-nivel')">
+                                    <span>Sensores de nível</span>
                                 </div>
-                                <div class="subcategoria">
-                                    <span>Instrumentação</span>
-                                    <div class="sub-items">
-                                        <span>Manômetros, Pressostatos</span>
-                                    </div>
+                            </div>
+
+                            <!-- Produto de submenu -->
+                            <div class="produto-submenu-item" onclick="abrirModal('termopares-pt100')">
+                                <i class="fas fa-star"></i>
+                                <span>Termopares PT100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. ACESSÓRIOS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('acessorios')">
+                            <i class="fas fa-wrench categoria-icon"></i>
+                            <span>Acessórios</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="acessorios">
+                            <div class="produto-submenu-item" onclick="abrirModal('isoladoras-manometros')">
+                                <i class="fas fa-star"></i>
+                                <span>Isoladoras de manômetros</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('flanges-ligacao')">
+                                <i class="fas fa-star"></i>
+                                <span>Flanges de ligação</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('acoplamentos')">
+                                <i class="fas fa-star"></i>
+                                <span>Acoplamentos</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('coxins')">
+                                <i class="fas fa-star"></i>
+                                <span>Coxins</span>
+                            </div>
+
+                            <!-- Trocadores de calor -->
+                            <div class="subcategoria-item">
+                                <div class="subcategoria-header" onclick="filtrarPorSubcategoria('trocadores-calor')">
+                                    <span>Trocadores de calor</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. UNIDADES HIDRÁULICAS -->
+                    <div class="categoria-item">
+                        <div class="categoria-header" onclick="toggleCategoria('unidades')">
+                            <i class="fas fa-industry categoria-icon"></i>
+                            <span>Unidades Hidráulicas</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="categoria-content" id="unidades">
+                            <div class="produto-submenu-item" onclick="abrirModal('unidades-compactas')">
+                                <i class="fas fa-star"></i>
+                                <span>Unidades hidr. Compactas</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('unidades-industriais')">
+                                <i class="fas fa-star"></i>
+                                <span>Unidades hidr. Industriais</span>
+                            </div>
+                            <div class="produto-submenu-item" onclick="abrirModal('projetos-especiais')">
+                                <i class="fas fa-star"></i>
+                                <span>Projetos especiais</span>
                             </div>
                         </div>
                     </div>
                 </aside>
 
-                <!-- Grid de Produtos -->
-                <main class="produtos-grid-container">
-                    <div class="produtos-header">
-                        <div class="resultados-info">
-                            <span id="resultadosCount">Mostrando todos os produtos</span>
-                        </div>
-                        <div class="ordenacao">
-                            <select id="ordenacao">
-                                <option value="nome">Ordenar por Nome</option>
-                                <option value="categoria">Ordenar por Categoria</option>
-                                <option value="marca">Ordenar por Marca</option>
-                            </select>
+                <!-- Área Principal de Produtos -->
+                <main class="produtos-main">
+                    <div class="produtos-info">
+                        <h2 id="categoria-titulo">Todos os Produtos</h2>
+                        <div class="produtos-meta">
+                            <span id="produtos-contador">95 produtos</span>
                         </div>
                     </div>
 
-                    <div class="produtos-grid" id="produtosGrid">
-                        <!-- Produtos serão carregados dinamicamente -->
+                    <!-- Grid de Produtos -->
+                    <div class="produtos-grid" id="produtos-grid">
+                        <!-- Produtos serão inseridos aqui via JavaScript -->
                     </div>
 
-                    <div class="loading" id="loading">
-                        <i class="fas fa-spinner fa-spin"></i>
-                        <span>Carregando produtos...</span>
-                    </div>
-
-                    <div class="no-results" id="noResults" style="display: none;">
-                        <i class="fas fa-search"></i>
-                        <h3>Nenhum produto encontrado</h3>
-                        <p>Tente ajustar os filtros ou termos de busca</p>
+                    <!-- Paginação -->
+                    <div class="paginacao" id="paginacao">
+                        <!-- Paginação será inserida aqui via JavaScript -->
                     </div>
                 </main>
             </div>
@@ -368,55 +470,50 @@
     </section>
 
     <!-- Modal de Produto -->
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-produto" id="modalProduto">
-            <button class="modal-close" id="modalClose">
-                <i class="fas fa-times"></i>
-            </button>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
             <div class="modal-content">
-                <div class="modal-image">
-                    <img id="modalImg" src="" alt="">
-                </div>
-                <div class="modal-info">
-                    <h2 id="modalTitulo"></h2>
-                    <div class="modal-categoria" id="modalCategoria"></div>
-                    <div class="modal-marca" id="modalMarca"></div>
-                    <div class="modal-descricao" id="modalDescricao"></div>
-                    <div class="modal-especificacoes" id="modalEspecificacoes"></div>
-                    <div class="modal-actions">
-                        <button class="btn-orcamento">
-                            <i class="fas fa-calculator"></i>
-                            Solicitar Orçamento
-                        </button>
-                        <button class="btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                            WhatsApp
-                        </button>
+                <button class="modal-close" onclick="fecharModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="modal-header">
+                    <div class="modal-imagem">
+                        <img id="modal-imagem" src="" alt="">
                     </div>
+                    <div class="modal-info">
+                        <div class="modal-marca" id="modal-marca"></div>
+                        <h2 id="modal-titulo"></h2>
+                        <p id="modal-descricao"></p>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3><i class="fas fa-cogs"></i> Especificações Técnicas</h3>
+                        <ul id="modal-especificacoes-lista"></ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3><i class="fas fa-industry"></i> Aplicações</h3>
+                        <ul id="modal-aplicacoes-lista"></ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="#" id="btn-documentacao" class="btn-modal btn-documentacao" target="_blank" style="display: none;">
+                        <i class="fas fa-file-pdf"></i> Documentação Técnica
+                    </a>
+                    <button class="btn-modal btn-orcamento" onclick="solicitarOrcamento()">
+                        <i class="fas fa-calculator"></i> Solicitar Orçamento
+                    </button>
+                    <a href="https://wa.me/554734667777" class="btn-modal btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- CTA Final -->
-    <section class="cta-produtos">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Não encontrou o que procura?</h2>
-                <p>Nossa equipe pode desenvolver soluções personalizadas para suas necessidades específicas</p>
-                <div class="cta-buttons">
-                    <a href="contato.html" class="btn-cta primary">
-                        <i class="fas fa-envelope"></i>
-                        Fale Conosco
-                    </a>
-                    <a href="https://wa.me/554734667777" class="btn-cta secondary" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -437,9 +534,9 @@
         <!-- Newsletter -->
         <div class="newsletter">
             <h1>Assine nossa newsletter e receba novidades em seu E-mail</h1>
-            <form>
-                <input type="text" placeholder="Digite seu Nome">
-                <input type="email" placeholder="Digite seu E-mail">
+            <form id="newsletterForm">
+                <input type="text" placeholder="Digite seu Nome" required>
+                <input type="email" placeholder="Digite seu E-mail" required>
                 <button type="submit">ENVIAR</button>
             </form>
         </div>
@@ -449,7 +546,7 @@
             <div class="footer-column">
                 <h4>INSTITUCIONAL</h4>
                 <ul>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="empresa.html">Sobre</a></li>
                     <li><a href="#">Políticas da Qualidade e Meio Ambiente</a></li>
                     <li><a href="#">Jarec Online</a></li>
                 </ul>
@@ -460,7 +557,7 @@
                     <li><a href="#">Como Comprar?</a></li>
                     <li><a href="#">Trocas e Devoluções</a></li>
                     <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Central de Atendimento</a></li>
+                    <li><a href="contato.html">Central de Atendimento</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -473,7 +570,13 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/554734667777" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
     <script src="produtos.js"></script>
 </body>
 </html>
