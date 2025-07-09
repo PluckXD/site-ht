@@ -461,27 +461,20 @@ body {
 .produto-submenu-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: space-between;
     padding: 0.8rem;
-    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
-    color: #856404;
+    background: #e6e9f2;
+    color: #1d2b46;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 0.5rem;
     transition: all 0.3s ease;
     font-weight: 500;
-    border-left: 4px solid #ffc107;
-    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+    margin-bottom: 0.5rem;
 }
 
 .produto-submenu-item:hover {
-    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    background: #d1d8e8;
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
-}
-
-.produto-submenu-item i {
-    color: #f39c12;
 }
 
 /* Área Principal de Produtos */
