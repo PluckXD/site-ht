@@ -6,6 +6,28 @@ const produtosDatabase = [
         id: 'bomba-vickers-v10-1p',
         nome: 'Bomba de palhetas V10, V20, V2010, V2020',
         marca: 'VICKERS',
+        categoria: 'teste',
+        subcategoria: '1',
+        tipo: 'produto-normal',
+        descricao: 'Com uma ampla gama de deslocamentos, as bombas de palhetas quadradas Vickers-Danfoss são projetadas para operar em uma variedade de aplicações industriais e móveis de baixa a média pressão. Oferecendo opções de bomba simples e dupla, nossas bombas de palhetas quadradas são amplamente utilizadas como bombas piloto e auxiliares em sistemas industriais complexos, sendo também comuns em caminhões pesados e ônibus interestaduais.',
+        especificacoes: [
+            'Tecnologia - Palhetas',
+            'Deslocamento – 3 - 42 cm³/rot',
+            'Classificação de pressão contínua – V10/V20 até 172 bar',
+        ],
+        aplicacoes: [
+            'Máquinas industriais',
+            'Sistemas de movimentação',
+            'Equipamentos de construção',
+            'Prensas hidráulicas'
+        ],
+        imagem: 'img/produtos/bomba-vickers-v10.jpg',
+        documentacao: 'https://assets.danfoss.com/documents/latest/238666/BC443078226453en-000101.pdf'
+    },
+    {
+        id: 'bomba-vickers-v10-1p',
+        nome: 'Bomba de palhetas V10, V20, V2010, V2020',
+        marca: 'VICKERS',
         categoria: 'bombas',
         subcategoria: 'bombas-vickers-palhetas',
         tipo: 'produto-normal',
@@ -292,7 +314,7 @@ const produtosDatabase = [
     {
         id: 'cilindro-rexroth-cdt3',
         nome: 'Cilindro CDT3',
-        marca: 'REXROTH',
+        marca: 'Tipo REXROTH',
         categoria: 'cilindros',
         subcategoria: 'cilindros-rexroth',
         tipo: 'produto-normal',
@@ -316,7 +338,7 @@ const produtosDatabase = [
     {
         id: 'cilindro-rexroth-cdt4',
         nome: 'Cilindro CDH2',
-        marca: 'REXROTH',
+        marca: 'Tipo REXROTH',
         categoria: 'cilindros',
         subcategoria: 'cilindros-rexroth',
         tipo: 'produto-normal',
@@ -340,7 +362,7 @@ const produtosDatabase = [
     {
         id: 'cilindro-rexroth-cdt5',
         nome: 'Cilindro CDL1',
-        marca: 'REXROTH',
+        marca: 'Tipo REXROTH',
         categoria: 'cilindros',
         subcategoria: 'cilindros-rexroth',
         tipo: 'produto-normal',
